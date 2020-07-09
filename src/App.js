@@ -1,24 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Deck } from "./components/Deck";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-screen max-h-screen flex flex-col md:flex-row">
+      <div className="w-full h-full">
+        <div className="flex flex-col h-full items-center justify-center p-3 relative overflow-hidden">
+          <Deck />
+        </div>
+      </div>
     </div>
   );
 }
